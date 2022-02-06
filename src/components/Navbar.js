@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="header">
         <div className="logo">
           <a href="/">
-            <img src={logo} alt="Logo" width="130" className="logo-img"/>
+            <img src={logo} alt="Genesis16Motorsports" width="130" className="logo-img" />
           </a>
         </div>
         <div className="menu">

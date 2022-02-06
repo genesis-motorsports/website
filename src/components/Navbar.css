@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
 :root {
   --navbar-color: #24262b;
@@ -10,10 +11,12 @@
 .header {
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   justify-content: space-between;
   padding: 0px 5%;
   background-color: var(--navbar-color);
   height: 80px;
+  border-bottom: 1px solid white;
 }
 
 .logo {
@@ -21,11 +24,19 @@
   margin-left: 3%;
 }
 
+.logo-img {
+  width: 130px;
+}
+
 .menu {
   display: none;
   color: white;
   font-size: 2rem;
   cursor: pointer;
+}
+
+#menu {
+  margin: 0;
 }
 
 #collapse {
@@ -46,9 +57,10 @@
 .nav-link {
   position: relative;
   font-size: 1.2rem;
-  font-family: "Poppins", sans-serif;
-  font-family: "FerroRosso";
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "FerroRosso"; */
   font-family: 'Gugi', cursive;
+	/* font-family: 'Aldrich', sans-serif; */
   text-decoration: none;
   color: var(--sec-font-color);
   padding: 10px;
@@ -87,6 +99,7 @@
 @media screen and (max-width: 768px) {
   .header {
     padding: 0px 10%;
+    justify-content: space-between;
   }
 
   .logo {
@@ -164,4 +177,10 @@
     font-size: 1rem;
   }
   
+}
+
+@media screen and (min-width: 1700px){
+  .header {
+    justify-content: center;
+  }
 }
