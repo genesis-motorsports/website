@@ -39,7 +39,7 @@ export default function Footer() {
 
               <pre></pre>
               <br />
-              <a href="/" id="mail">
+              <a href="mailto:genesis16motorsports@gmail.com" id="mail">
                 <i
                   className="fa fa-envelope"
                   id="iconscenter"
