@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Sponsors.css";
-import img1 from "../images/sponsors/download.png";
-import img2 from "../images/sponsors/images.png";
+import img1 from "../images/sponsors/ansys.png";
+import img2 from "../images/sponsors/solidworks.png";
 
 const Sponsors = () => {
   return (
