@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.section-top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    position: relative;
+    background-image: url(images/HOME/1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 10s infinite;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+}
+@keyframes slide {
+    0%{
+        background-image: url(images/HOME/1.jpeg);
+    }
+    33%{
+        background-image: url(images/HOME/2.jpg);
+    }
+    67%{
+        background-image: url(images/HOME/3.jpg);
+    }
+}
+img{
+    width: "961";
+    height: "2048";
+}
+.content h1{
+color: white;
+font-size: 60px;
+letter-spacing: 16px;
+font-family: 'Aldrich', sans-serif;
+}
+.content h2{
+    color: white;
+font-size: 15px;
+letter-spacing: 10px;
+font-family: 'Aldrich', sans-serif;
+font-weight: 600;
+
+}
