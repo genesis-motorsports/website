@@ -16,7 +16,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="footer-col">
-              <a href="/" id="location">
+              <a href="https://goo.gl/maps/AZKqzHNc8F5BGCHG9" id="location" target="_blank" rel="noreferrer">
                 <i
                   className="fa fa-map-marker"
                   id="iconscenter"

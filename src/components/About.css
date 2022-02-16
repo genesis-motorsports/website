@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+.about-body {
+  line-height: 1.5;
+  font-family: "Aldrich", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outer-home {
+  background-color: #24262b;
+}
+
+.image_overlay {
+  /* position: static;
+  top: 0;
+  left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  max-width: 2000px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 45px 0;
+}
+
+.abt-row {
+  padding-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* .footer {
+  background-color: #24262b;
+  padding: 65px 0;
+} */
+
+.about-footer-col {
+  width: 30%;
+  /* padding: 0 15px; */
+  margin: 0;
+}
+
+.about-footer-col:nth-child(1) {
+  flex-grow: 0.25;
+}
+
+/* .about-footer-col:nth-child(2) {
+  padding: 0 25px;
+}
+
+.about-footer-col:nth-child(3) {
+  padding: 0 25px;
+} */
+
+.abt-txt {
+  color: rgb(231, 231, 231);
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-footer-col h4 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.about-footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #d22b2b;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+  transition: width 0.25s;
+}
+
+.about-footer-col h4:hover::before {
+  width: 75px;
+}
+
+/* .image_overlay > * {
+  transform: translateY(30px);
+  transition: transform 0.25s;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image_overlay:hover > * {
+  transform: translateY(0);
+} */
+
+.hr {
+  height: 1px;
+  background-color: rgb(167, 0, 0);
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+}
+
+/*responsive*/
+
+/* Tablets and iPads */
+@media screen and (max-width: 768px) {
+  .abt-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  .abt-txt {
+    font-size: 12px;
+  }
+}
+
+/* Phones */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 0;
+  }
+
+  .about-footer-col {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .about-footer-col h4 {
+    font-size: 18px;
+  }
+}

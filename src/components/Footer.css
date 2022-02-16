@@ -21,7 +21,7 @@ ul {
 }
 .footer {
   background-color: #24262b;
-  padding: 65px 0;
+  padding: 0 0 10px 0;
 }
 .footer-col {
   width: 28%;
@@ -29,9 +29,11 @@ ul {
 }
 .footer-col:nth-child(1) {
   flex-grow: 0.25;
+  font-family: "Poppins", sans-serif;
 }
 .footer-col:nth-child(2) {
   padding: 0 25px;
+  font-family: "Poppins", sans-serif;
 }
 .footer-col:nth-child(3) {
   padding: 0 25px;
@@ -42,7 +44,7 @@ span {
   color: #ffffff;
 }
 .mail {
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
 }
 .footercompanyname {
@@ -128,6 +130,12 @@ span {
   .footer-col:nth-child(3) {
     padding: 0 25px;
     margin: 0px;
+  }
+  span {
+    font-size: 14px;
+  }
+  .mail {
+    font-size: 14px;
   }
 }
 @media (max-width: 574px) {
