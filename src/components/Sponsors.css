@@ -58,20 +58,54 @@
 .sponsor-item {
   width: 250px;
   height: 170px;
-  margin: 5px;
+  margin: 15px 10px;
+  background-color: rgba(54, 54, 54, 0.2);
+  background-color: rgb(30, 30, 30);
+  /* border: 1px solid red; */
 }
 
 .sponsor-img {
-    width: 100%;
+    display: block;
+    margin: auto;
+    width: 80%;
     height: 100%;
     object-fit: cover;
+    object-fit: fill;
+    object-fit: contain;
 }
+
+.sponsor-item-100 {
+  width: 100%;
+}
+
+
+/* Tablets and iPads */
+@media screen and (max-width: 768px) {
+  .sponsor-heading {
+    font-size: 18px;
+  }
+
+  .sponsor-item {
+    width: 120px;
+    height: 80px;
+    margin: 10px;
+  }
+  
+}
+
+/* Phones */
 @media screen and (max-width: 480px) {
   .container {
     padding: 20px 0;
   }
-  
-  .sponsor-heading {
-    font-size: 18px;
+
+  .sponsor-item {
+    width: 90px;
+    height: 70px;
+    margin: 5px;
   }
+}
+
+@media screen and (min-width: 1700px){
+  
 }

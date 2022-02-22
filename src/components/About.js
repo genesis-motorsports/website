@@ -1,13 +1,13 @@
 import React from "react";
-import aboutus from "../images/aboutus.jpg";
+// import aboutus from "../images/aboutus.jpg";
 import "./About.css";
 
-const About = () => {
+const About = (props) => {
   return (
     <div className="outer-home">
       <div className="about-body">
         <div className="image_overlay">
-          <div className="container">
+          <div className="container" id={`${props.ids.about}`}>
             <div className="about-footer-col">
               {" "}
               <h4 className="about-txt">ABOUT US</h4>

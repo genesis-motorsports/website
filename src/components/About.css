@@ -137,6 +137,10 @@
     padding: 0 15px;
   }
 
+  .about-footer-col h4 {
+    font-size: 18px;
+  }
+
   .abt-txt {
     font-size: 12px;
   }
@@ -151,9 +155,5 @@
   .about-footer-col {
     width: 100%;
     padding: 0px;
-  }
-
-  .about-footer-col h4 {
-    font-size: 18px;
   }
 }

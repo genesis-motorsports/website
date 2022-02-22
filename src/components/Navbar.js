@@ -25,7 +25,7 @@ const closeNav = () => {
   document.getElementById("overlay").style.display = "none";
 };
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <nav>
       <div className="header">
@@ -39,7 +39,9 @@ export default function Navbar() {
             &#9776;
           </p>
         </div>
-        <div id="overlay" onClick={closeNav}>
+
+        {/* Use  onClick={closeNav} in the below div to close the menu popup on clicking outside */}
+        <div id="overlay">
           <div className="collapse-navbar" id="collapse">
             <ul className="nav-links">
               <li className="nav-item">
@@ -48,27 +50,27 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="#about">
                   About Us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="#achievements">
                   Achievements
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="#sponsors">
                   Sponsors
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="#gallery">
                   Gallery
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="#contact">
                   Contact
                 </a>
               </li>
