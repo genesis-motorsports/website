@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Aldrich', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    
+}
+.achhievement-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.achievement-row{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.achievement-body{
+	background-color: #24262b;
+    padding: 65px 0;
+}
+
+.achievement-col:nth-child(1){
+    width: 50%;
+   padding: 0 65px;
+	padding-right: 5px;
+}
+.achievement-col:nth-child(2){
+    width: 50%;
+   padding: 0 15px;
+   padding-right: 109px;
+	
+}
+
+p{
+	color: white;
+	position:relative;
+	top: 22px;
+	left: 203px;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 20px;
+}
+
+.supra{
+	color: white;
+	position:relative;
+	top: 22px;
+	left: 215px;
+	font-family: 'Aldrich', sans-serif;
+}
+
+img{
+	width: 500px;
+}
+
+
+.achievements{
+	font-size: 24px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+	
+	left: 107px;
+	top: -18px;
+	
+}
+.achievements::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #D22B2B;
+	height: 2px;
+	box-sizing: border-box;
+	width: 90px;
+}
+
+
+
+tr{
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Aldrich', sans-serif;
+}
+tr:hover{
+    color: #D22B2B;
+}
+
+
+/*tablet i guess*/
+@media screen and (max-width: 767px){
+	#tablee{
+		position: relative;
+		top: 89px;
+		left: 120px;
+		margin-bottom: 250px;
+
+		
+	}
+
+  }
+  @media screen and (max-width: 767px){
+	.achievement-col:nth-child(2){
+		width: 80%;
+	   padding: 0 15px;
+	   padding-right: 109px;
+		
+	}
+
+  }
+ 
+  @media screen and (max-width: 767px){
+	img{
+		position: relative;
+		
+	}
+
+  }
+/*mobile*/
+@media screen and (max-width: 574px){
+	#tablee{
+		position: relative;
+		top: 89px;
+		left: 80px;
+		margin-bottom: 250px;
+
+		
+	}
+
+  }
+  @media screen and (max-width: 574px){
+	.achievement-col:nth-child(2){
+		width: 80%;
+	   padding: 0 15px;
+	   padding-right: 109px;
+		
+	}
+
+  }
+ 
+  @media screen and (max-width: 574px){
+	img{
+		position: relative;
+		width: 349px;
+	}
+
+  }
+  @media screen and (max-width: 574px){
+	.gokart,.supra{
+		position: relative;
+		left: 121px;
+	}
+
+  }
