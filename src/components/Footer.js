@@ -24,7 +24,6 @@ export default function Footer() {
                 ></i>
               </a>
               <p>
-                <p>
                   <span>Dr. D.Y. Patil Educational Complex,</span>
                   <span style={{ position: "relative", textAlign: "left" }}>
                     {" "}
@@ -34,7 +33,6 @@ export default function Footer() {
                     {" "}
                     Maharashtra, India
                   </span>
-                </p>
               </p>
 
               <pre></pre>

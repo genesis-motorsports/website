@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Aldrich', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.achhievement-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.achievement-row{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+
+/* .achievement-body{
+	background-color: #24262b;
+    padding: 65px 0;
+} */
+
+.achievement-col:nth-child(1){
+    width: 45%;
+    /* padding: 0 65px;
+	padding-right: 5px;
+    padding: 0 15%; */
+	/* margin-left: 20px; */
+}
+
+.achievement-col:nth-child(2){
+    width: 50%;
+    /* padding: 0 15px;
+    padding-right: 109px;
+    padding: 0 15%; */
+}
+
+/* .achievement-col {
+	margin: 0 20px;
+} */
+
+.ach-text, .ach-heading{
+	color: white;
+	position:relative;
+	/* top: 22px;
+	left: 203px; */
+	font-family: 'Aldrich', sans-serif;
+	font-size: 16px;
+}
+
+.ach-heading {
+    font-size: 24px;
+}
+
+.supra, .gokart{
+	color: white;
+	/* position:relative;
+	top: 22px;
+	left: 215px; */
+	font-family: 'Aldrich', sans-serif;
+    text-align: center;
+	width: 500px;
+}
+
+.ach-img{
+	width: 500px;
+	object-fit: contain;
+}
+
+
+.achievements{
+	font-size: 24px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	/* position: relative;
+	left: 107px;
+	top: -18px; */
+	
+}
+.achievements::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #D22B2B;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+    transition: width 0.25s;
+}
+
+.achievements:hover::before {
+    width: 75px;
+}
+
+.table {
+	background-color: rgb(30, 30, 30) !important;
+}
+
+tr{
+	/* font-weight: bold; */
+	font-size: 16px;
+	/* font-family: 'Aldrich', sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+tr:hover{
+    color: #D22B2B;
+}
+
+.width-auto {
+    width: auto;
+}
+
+.margin-t {
+	margin-top: 10%;
+}
+
+/*tablet i guess*/
+/* @media screen and (max-width: 767px){
+	#tablee{
+		position: relative;
+		top: 89px;
+		left: 120px;
+		margin-bottom: 250px;		
+	}
+
+  }
+  @media screen and (max-width: 767px){
+	.achievement-col:nth-child(2){
+		width: 80%;
+	   padding: 0 15px;
+	   padding-right: 109px;
+		
+	}
+
+  }
+ 
+  @media screen and (max-width: 767px){
+	img{
+		position: relative;
+		
+	}
+
+  } */
+/*mobile*/
+/* @media screen and (max-width: 574px){
+	#tablee{
+		position: relative;
+		top: 89px;
+		left: 80px;
+		margin-bottom: 250px;
+
+		
+	}
+
+  }
+  @media screen and (max-width: 574px){
+	.achievement-col:nth-child(2){
+		width: 80%;
+	   padding: 0 15px;
+	   padding-right: 109px;
+		
+	}
+
+  }
+ 
+  @media screen and (max-width: 574px){
+	img{
+		position: relative;
+		width: 349px;
+	}
+
+  }
+  @media screen and (max-width: 574px){
+	.gokart,.supra{
+		position: relative;
+		left: 121px;
+	}
+
+  } */
+
+@media screen and (max-width: 1230px) {
+	.achievement-col:nth-child(1){
+		width: 50%;
+	}
+
+	.ach-img{
+		width: 400px;
+	}
+
+	.supra, .gokart{
+		width: 400px;
+	}
+	
+	.achievement-col:nth-child(2){
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 1010px) {
+	.achievement-col:nth-child(1){
+		width: 50%;
+	}
+
+	.ach-img{
+		width: 350px;
+	}
+
+	.supra, .gokart{
+		width: 350px;
+	}
+	
+	.achievement-col:nth-child(2){
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 968px) {
+	.achievement-row{
+		flex-direction: column;
+	}
+
+	.achievement-col:nth-child(1){
+		width: 100%;
+	}
+	
+	.achievement-col:nth-child(2){
+		width: 100%;
+	}
+
+	.ach-img{
+		width: 500px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.supra, .gokart{
+		width: 500px;
+		margin: 0 auto;
+	}
+}
+
+
+/* Tablets and iPads */
+@media screen and (max-width: 768px) {
+	.ach-text, .ach-heading{
+		font-size: 12px;
+	}
+	
+	.ach-heading {
+		font-size: 18px;
+	}
+
+	tr{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.ach-img{
+		width: 350px;
+	}
+
+	.supra, .gokart{
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.achievement-row{
+		padding: 0 10px;
+	}
+}
+  
+/* Phones */
+@media screen and (max-width: 480px) {
+	.ach-img{
+		width: 250px;
+	}
+
+	.supra, .gokart{
+		width: 250px;
+	}
+	
+}

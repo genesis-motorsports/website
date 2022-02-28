@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home2 from './components/Home2';
 import Sponsors from './components/Sponsors';
 import About from './components/About';
+import Achievements from './components/Achievements';
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -18,6 +19,7 @@ function App() {
           <Navbar ids={ids} />
           <Home2 ids={ids} />
           <About ids={ids} />
+          <Achievements ids={ids}/>
           <Sponsors ids={ids} />
           <Footer ids={ids} />
       </div>
