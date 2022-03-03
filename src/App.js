@@ -5,6 +5,7 @@ import Home2 from './components/Home2';
 import Sponsors from './components/Sponsors';
 import About from './components/About';
 import Achievements from './components/Achievements';
+import Gallery from './components/Gallery';
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -21,6 +22,7 @@ function App() {
           <About ids={ids} />
           <Achievements ids={ids}/>
           <Sponsors ids={ids} />
+          <Gallery ids={ids} />
           <Footer ids={ids} />
       </div>
   );
