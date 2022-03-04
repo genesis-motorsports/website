@@ -18,7 +18,11 @@ import img14 from "../images/gallery/14.jpeg"
 
 const Gallery = (props) => {
     const galleryImgArray = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
+    const halfView = [img1, img2, img3, img4, img5, img6, img7, img8]
+
     const [ind, setInd] = useState(0)
+
+    const {galleryView, handleGallery} = props;
     const handleImageClick = (index) => {
         const i = index
         setInd(i)
@@ -58,22 +62,32 @@ const Gallery = (props) => {
             <div className="container" id={`${props.ids.gallery}`}>
                 <h4 className="gallery-heading">GALLERY</h4>
                 <div className="gallery-container">
-                {galleryImgArray.map((imgNo, index) => (
-                    <div className="gallery-item" key={index}>
-                        <img src={imgNo} alt="Gallery" className='gallery-img' onClick={()=>{
-                            handleImageClick(index)
-                        }}/>
-                    </div>
-                ))}
-                <div className="modal" id="myModal">
-                    <span className="close" onClick={closeModal}>&times;</span>
-                    <div className="prev-img-next">
-                        <span className='prev-next-btn' onClick={goPrevious}>&#8249;</span>
-                        <img className="modal-content" id="img" alt='Modal'></img>
-                        <span className='prev-next-btn' onClick={goNext}>&#8250;</span>
+                    {galleryView === "View Less" ? galleryImgArray.map((imgNo, index) => (
+                        <div className="gallery-item" key={index}>
+                            <img src={imgNo} alt="Gallery" className='gallery-img' onClick={()=>{
+                                handleImageClick(index)
+                            }}/>
+                        </div>
+                    )) : 
+                    halfView.map((imgNo, index) => (
+                        <div className="gallery-item" key={index}>
+                            <img src={imgNo} alt="Gallery" className='gallery-img' onClick={()=>{
+                                handleImageClick(index)
+                            }}/>
+                        </div>
+                    ))}
+                    <div className="modal" id="myModal">
+                        <span className="close" onClick={closeModal}>&times;</span>
+                        <div className="prev-img-next">
+                            <span className='prev-next-btn' onClick={goPrevious}>&#8249;</span>
+                            <img className="modal-content" id="img" alt='Modal'></img>
+                            <span className='prev-next-btn' onClick={goNext}>&#8250;</span>
+                        </div>
                     </div>
                 </div>
-                </div>
+                <div className="view-more">
+                        {galleryView === "View Less" ? <a href="#gallery"><p onClick={handleGallery}>{galleryView} <span className='down-arrow'> &nbsp; &#8743;</span></p></a> : <p onClick={handleGallery}>{galleryView} <span className='down-arrow'> ...</span></p>}
+                    </div>
             </div>
         </div>
         <div className="hr"></div>

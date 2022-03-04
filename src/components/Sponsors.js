@@ -22,6 +22,7 @@ import deck from "../images/sponsors/deck.png";
 // style={{filter: "invert(100%) sepia(100%) saturate(0%) hue-rotate(205deg) brightness(106%) contrast(101%)"}}
 
 const Sponsors = (props) => {
+    const {sponsorView, handleSponsor} = props
     return (
         <div className='outer-home'>
             <div className="image-overlay">
@@ -68,56 +69,61 @@ const Sponsors = (props) => {
                                 <img src={k7engineers} className="sponsor-img" alt="k7engineers" />
                             </a>
                         </div>
-                        <div className="sponsor-item">
-                            <a href="/">
-                                <img src={spicy13} className="sponsor-img" alt="spicy13" />
-                            </a>
-                        </div>
-                        <div className="sponsor-item">
-                            <a href="/">
-                                <img src={ps} className="sponsor-img" alt="ps" />
-                            </a>
-                        </div>
-                        <div className="sponsor-item">
-                            <a href="/">
-                                <img src={carbonchromecustoms} className="sponsor-img" alt="carbonchromecustoms" />
-                            </a>
-                        </div>
-                        <div className="sponsor-item">
-                            <a href="/">
-                                <img src={dhananjayengineering} className="sponsor-img" alt="dhananjayengineering" />
-                            </a>
-                        </div>
-                        <div className="sponsor-item">
-                            <a href="/">
-                                <img src={shashikantfurnitures} className="sponsor-img" alt="shashikantfurnitures" />
-                            </a>
-                        </div>
-                        <div className="sponsor-item">
-                            <a href="/">
-                                <img src={trimurtiworks} className="sponsor-img sponsor-item-100" alt="trimurtiworks" />
-                            </a>
-                        </div>
-                        <div className="sponsor-item">
-                            <a href="/">
-                                <img src={toloromenterprises} className="sponsor-img" alt="toloromenterprises" />
-                            </a>
-                        </div>
-                        <div className="sponsor-item">
-                            <a href="/">
-                                <img src={bigbull} className="sponsor-img" alt="bigbull" />
-                            </a>
-                        </div>
-                        <div className="sponsor-item">
-                            <a href="/">
-                                <img src={deck} className="sponsor-img sponsor-item-100" alt="deck" />
-                            </a>
-                        </div>
+                        {sponsorView === "View Less" ? <div className="hidden">
+                            <div className="sponsor-item">
+                                <a href="/">
+                                    <img src={spicy13} className="sponsor-img" alt="spicy13" />
+                                </a>
+                            </div>
+                            <div className="sponsor-item">
+                                <a href="/">
+                                    <img src={ps} className="sponsor-img" alt="ps" />
+                                </a>
+                            </div>
+                            <div className="sponsor-item">
+                                <a href="/">
+                                    <img src={carbonchromecustoms} className="sponsor-img" alt="carbonchromecustoms" />
+                                </a>
+                            </div>
+                            <div className="sponsor-item">
+                                <a href="/">
+                                    <img src={dhananjayengineering} className="sponsor-img" alt="dhananjayengineering" />
+                                </a>
+                            </div>
+                            <div className="sponsor-item">
+                                <a href="/">
+                                    <img src={shashikantfurnitures} className="sponsor-img" alt="shashikantfurnitures" />
+                                </a>
+                            </div>
+                            <div className="sponsor-item">
+                                <a href="/">
+                                    <img src={trimurtiworks} className="sponsor-img sponsor-item-100" alt="trimurtiworks" />
+                                </a>
+                            </div>
+                            <div className="sponsor-item">
+                                <a href="/">
+                                    <img src={toloromenterprises} className="sponsor-img" alt="toloromenterprises" />
+                                </a>
+                            </div>
+                            <div className="sponsor-item">
+                                <a href="/">
+                                    <img src={bigbull} className="sponsor-img" alt="bigbull" />
+                                </a>
+                            </div>
+                            <div className="sponsor-item">
+                                <a href="/">
+                                    <img src={deck} className="sponsor-img sponsor-item-100" alt="deck" />
+                                </a>
+                            </div>
+                        </div> : ""}
                         {/* <div className="sponsor-item">
                             <a href="/">
-                                <img src={arontech} className="sponsor-img" alt="arontech" />
+                            <img src={arontech} className="sponsor-img" alt="arontech" />
                             </a>
                         </div> */}
+                    </div>
+                    <div className="view-more">
+                        {sponsorView === "View Less" ? <a href="#sponsors"><p onClick={handleSponsor}>{sponsorView} <span className='down-arrow'> &nbsp; &#8743;</span></p></a> : <p onClick={handleSponsor}>{sponsorView} <span className='down-arrow'> ...</span></p>}
                     </div>
                 </div>
             </div>

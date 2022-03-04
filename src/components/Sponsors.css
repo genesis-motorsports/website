@@ -48,7 +48,7 @@
   width: 75px;
 }
 
-.sponsor-container {
+.sponsor-container, .hidden {
   display: inline-flex;
   flex-wrap: wrap;
   width: 100%;
@@ -78,6 +78,46 @@
   width: 100%;
 }
 
+.view-more {
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  /* box-shadow: rgba(255, 255, 255, 0.288) 0px -70px 30px 20px; */
+}
+
+.view-more a {
+  color: white;
+}
+
+.view-more p {
+  font-size: 16px;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 10px;
+  margin: 0;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: all 0.5s;
+  background-color: rgb(30, 30, 30);
+  /* box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px; */
+  /* box-shadow: rgba(255, 255, 255, 0.048) 0px 8px 24px, rgba(255, 255, 255, 0.062) 0px 16px 56px, rgba(255, 255, 255, 0.068) 0px 24px 80px; */
+}
+
+.down-arrow {
+  font-size: 20px;
+  color: white;
+  transition: all 0.5s;
+}
+
+.view-more p:hover {
+  background-color: #c5c5c5;
+  color: black;
+  cursor: pointer;
+}
+
+.view-more p:hover .down-arrow {
+  color: black;
+}
 
 /* Tablets and iPads */
 @media screen and (max-width: 768px) {
@@ -91,6 +131,16 @@
     margin: 10px;
   }
   
+  .view-more p {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  .down-arrow {
+    font-size: 12px;
+    transition: all 0.5s;
+  }
 }
 
 /* Phones */

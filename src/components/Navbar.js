@@ -19,10 +19,12 @@ function toggleNav() {
 }
 
 const closeNav = () => {
-  document.getElementById("collapse").style.display = "none";
-  isExpanded = false;
-  document.getElementById("menu").innerText = "\u2630";
-  document.getElementById("overlay").style.display = "none";
+  if (window.innerWidth <= 768){
+    document.getElementById("collapse").style.display = "none";
+    isExpanded = false;
+    document.getElementById("menu").innerText = "\u2630";
+    document.getElementById("overlay").style.display = "none";
+  }
 };
 
 export default function Navbar(props) {
@@ -41,7 +43,7 @@ export default function Navbar(props) {
         </div>
 
         {/* Use  onClick={closeNav} in the below div to close the menu popup on clicking outside */}
-        <div id="overlay">
+        <div id="overlay" onClick={closeNav}>
           <div className="collapse-navbar" id="collapse">
             <ul className="nav-links">
               <li className="nav-item">
@@ -59,12 +61,12 @@ export default function Navbar(props) {
                   Achievements
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={() => props.setSponsorView("View Less")}>
                 <a className="nav-link" href="#sponsors">
                   Sponsors
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={() => props.setGalleryView("View Less")}>
                 <a className="nav-link" href="#gallery">
                   Gallery
                 </a>
