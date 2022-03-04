@@ -227,6 +227,8 @@ tr:hover{
 @media screen and (max-width: 968px) {
 	.achievement-row{
 		flex-direction: column;
+		height: 480px;
+		justify-content: flex-start;
 	}
 
 	.achievement-col:nth-child(1){
@@ -252,6 +254,10 @@ tr:hover{
 
 /* Tablets and iPads */
 @media screen and (max-width: 768px) {
+	.achievement-row{
+		height: 450px;
+	}
+
 	.ach-text, .ach-heading{
 		font-size: 12px;
 	}
@@ -266,6 +272,10 @@ tr:hover{
 }
 
 @media screen and (max-width: 700px) {
+	.achievement-row{
+		height: 380px;
+	}
+
 	.ach-img{
 		width: 350px;
 	}
@@ -283,6 +293,10 @@ tr:hover{
   
 /* Phones */
 @media screen and (max-width: 480px) {
+	.achievement-row{
+		height: 350px;
+	}
+
 	.ach-img{
 		width: 250px;
 	}
