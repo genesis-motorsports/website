@@ -31,12 +31,13 @@
 .menu {
   display: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
 #menu {
   margin: 0;
+  padding: 10px;
 }
 
 #collapse {
@@ -108,6 +109,10 @@
 
   .logo {
     padding: 5px;
+  }
+
+  .logo-img {
+    width: 80px;
   }
 
   .menu {

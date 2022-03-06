@@ -22,12 +22,16 @@ import deck from "../images/sponsors/deck.png";
 // style={{filter: "invert(100%) sepia(100%) saturate(0%) hue-rotate(205deg) brightness(106%) contrast(101%)"}}
 
 const Sponsors = (props) => {
-    const {sponsorView, handleSponsor} = props
+    const { sponsorView, handleSponsor } = props
     return (
         <div className='outer-home'>
             <div className="image-overlay">
                 <div className="container" id={`${props.ids.sponsors}`}>
-                <h4 className="sponsor-heading">OUR SPONSORS</h4>
+                    <h4 className="sponsor-heading">OUR SPONSORS</h4>
+                    <p className="abt-txt marginb-30px">
+                        Our sponsors really work as a driving force behind the team. Their continuous support encourages us to strive further. They are always with us in our ups and downs.  We take this opportunity to express our gratitude for all of their contributions.
+                    </p>
+
                     <div className="sponsor-container">
                         <div className="sponsor-item">
                             <a href="/">
@@ -36,7 +40,7 @@ const Sponsors = (props) => {
                         </div>
                         <div className="sponsor-item">
                             <a href="/">
-                                <img src={solidworks} className="sponsor-img" alt="solidworks" width={50}/>
+                                <img src={solidworks} className="sponsor-img" alt="solidworks" width={50} />
                             </a>
                         </div>
                         <div className="sponsor-item">
@@ -61,7 +65,7 @@ const Sponsors = (props) => {
                         </div>
                         <div className="sponsor-item">
                             <a href="/">
-                                <img src={endurance} className="sponsor-img" alt="endurance"  />
+                                <img src={endurance} className="sponsor-img" alt="endurance" />
                             </a>
                         </div>
                         <div className="sponsor-item">

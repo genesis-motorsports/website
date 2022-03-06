@@ -119,6 +119,10 @@
   color: black;
 }
 
+.marginb-30px {
+  margin-bottom: 30px;
+}
+
 /* Tablets and iPads */
 @media screen and (max-width: 768px) {
   .sponsor-heading {

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Achievements.css"
 import home2 from "../images/home2.jpg"
+import gokart from "../images/go-kart-ach1.jpeg"
 
 const Achievements = (props) => {
     return (
@@ -8,6 +9,9 @@ const Achievements = (props) => {
             <div className="image-overlay">
                 <div className='container' id={`${props.ids.achievements}`}>
                     <p className="achievements ach-heading">ACHIEVEMENTS</p>
+                    <p className="abt-txt marginb-30px">
+                        We take pride in participating in every competition where we can showcase our vehicle's strength. We work intensely to make our vehicle competitive at the biggest stage. We have participated in various competitions on the national stage and also finished on the podium in 2017. It's all about growing and learning in every race and fine-tuning our approach. Never stop trying.
+                    </p>
                     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-indicators margin-t">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -20,7 +24,7 @@ const Achievements = (props) => {
                                     <div className="achievement-container">
                                         <div className="achievement-row">
                                             <div className="achievement-col">
-                                                <img src={home2} alt="Achievements 1" className='ach-img' /><br />
+                                                <img src={gokart} alt="Achievements 1" className='ach-img' /><br />
                                                 <p className="gokart ach-text">GO KART</p>
                                             </div>
                                             <div className="achievement-col" id="tablee">
@@ -28,7 +32,7 @@ const Achievements = (props) => {
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">#</th>
-                                                            <th scope="cols">RACE</th>
+                                                            <th scope="cols">EVENTS</th>
                                                             <th scope="col">RANK</th>
                                                         </tr>
                                                     </thead>
@@ -41,7 +45,7 @@ const Achievements = (props) => {
                                                         <tr>
                                                             <th scope="row">2</th>
                                                             <td>National Kart Racing 2017</td>
-                                                            <td>3<sup>rd </sup>🥉</td>
+                                                            <td>3<sup>rd </sup></td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">3</th>
@@ -69,7 +73,7 @@ const Achievements = (props) => {
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">#</th>
-                                                            <th scope="cols">RACE</th>
+                                                            <th scope="cols">EVENT</th>
                                                             <th scope="col">RANK</th>
                                                         </tr>
                                                     </thead>
