@@ -72,7 +72,7 @@ export default function Navbar(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
+                <a className="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfxDqlNUcpgo7nwebxyZFRiJ3loqRIYmnmCfKUqHj6th2saOg/viewform?usp=sf_link" target="_blank" rel="noreferrer">
                   Contact
                 </a>
               </li>
